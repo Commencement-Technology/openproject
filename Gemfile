@@ -39,6 +39,10 @@ gem "activemodel-serializers-xml", "~> 1.0.1"
 gem "activerecord-import", "~> 1.8.0"
 gem "activerecord-session_store", "~> 2.1.0"
 gem "ox"
+
+# Tying down rackup to work around https://github.com/puma/puma/pull/3532#issuecomment-2433486115
+# Remove once the referenced PR is released.
+gem "rackup", "~> 1.0.0"
 gem "rails", "~> 7.1.3"
 gem "responders", "~> 3.0"
 
